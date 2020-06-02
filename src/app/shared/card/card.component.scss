@@ -1,0 +1,101 @@
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+
+    .img-wrapper {
+        display: flex;
+        max-height: 200px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            display: block;
+            width: auto;
+            height: 100%;
+        }
+
+        .label {
+            position: absolute;
+            font-size: 20px;
+            color: #fff;
+            font-family: 'Oswald', sans-serif;
+            padding: 5px 10px;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            text-transform: uppercase;
+            margin: 0;
+            left: 10px;
+            bottom: 15px;
+        }
+
+        .buy-now {
+            position: absolute;
+            color: #fff;
+            text-align: right;
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            right: 10px;
+            top: 15px;
+
+            .btn-success {
+                font-size: 18px;
+                margin-bottom: 10px;
+                padding: 5px 15px;
+            }
+
+            .price {
+                font-size: 12px;
+                margin-left: auto;
+                width: 80px;
+                font-weight: 700;
+                padding: 5px;
+                text-align: center;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+            }
+        }
+    }
+
+    .headline,
+    .offset,
+    .card-text {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .headline {
+        color: #dc2c6a;
+    }
+
+    .offset {
+        color: #03bc32;
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        min-height: 195px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+    .card {
+        .card-body {
+            min-height: 220px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .card {
+        .img-wrapper {
+            max-height: 240px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
